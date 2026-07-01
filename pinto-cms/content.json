@@ -73,7 +73,11 @@
     ]
   },
   "gallery": {
-    "images": []
+    "images": [
+      "/assets/images/ess_1966-1-.jpg",
+      "/assets/images/dscf7927-1-.jpg",
+      "/assets/images/dom’s-str-martini.jpg"
+    ]
   },
   "contact": {
     "email": "hello@pintospirits.com",
