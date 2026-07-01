@@ -14,7 +14,7 @@ collections:
     files:
       - name: "content"
         label: "Homepage Content"
-        file: "content.json"
+        file: "pinto-cms/content.json"
         format: json
         fields:
 
