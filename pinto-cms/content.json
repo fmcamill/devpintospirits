@@ -17,12 +17,17 @@
     "intro": "Three distinct brands. Each chosen for character, craft, and the story behind the bottle.",
     "items": [
       {
-        "name": "Brand One",
+        "name": "Kinglake Distillery",
         "tag": "Single Malt Whisky",
         "tagline": "A story told in every dram.",
         "story": "A story of craft, patience, and Australian terroir. This brand represents the pinnacle of local distilling — each batch a conversation between grain, water, and time.",
-        "image": "",
-        "gallery": [],
+        "image": "/assets/images/2-1-.jpg",
+        "gallery": [
+          "/assets/images/dom’s-str-martini.jpg",
+          "/assets/images/dscf7927-1-.jpg",
+          "/assets/images/portrait-primary-1-.webp",
+          "/assets/images/hero-image.webp"
+        ],
         "products": [
           {
             "name": "Signature Expression",
