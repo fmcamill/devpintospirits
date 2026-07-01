@@ -21,7 +21,7 @@
     "location": "Melbourne, Victoria"
   },
   "site": {
-    "show_journal": true
+    "show_journal": false
   },
   "hero": {
     "eyebrow": "Melbourne's Craft Spirits Collective",
