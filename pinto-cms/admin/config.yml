@@ -3,7 +3,7 @@ backend:
   branch: main
   site_domain: pintospirits.netlify.app
 
-media_folder: assets/images
+media_folder: pinto-cms/assets/images
 public_folder: /assets/images
 
 locale: en
