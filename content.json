@@ -1,0 +1,32 @@
+{
+  "about": {
+    "photo": "/assets/images/portrait-primary-1-.webp",
+    "heading": "test heading",
+    "body_1": "test paragraph",
+    "body_2": "test second paragraph",
+    "quote": "test quote"
+  },
+  "gallery": {
+    "images": [
+      "/assets/images/2-1-.jpg",
+      "/assets/images/dscf7927-1-.jpg"
+    ]
+  },
+  "brands": {
+    "intro": "Distinct brands. Each chosen for character, craft, and the story behind the bottle."
+  },
+  "contact": {
+    "email": "hello@pintospirits.com",
+    "phone": "+61 3 9000 0000",
+    "location": "Melbourne, Victoria"
+  },
+  "site": {
+    "show_journal": true
+  },
+  "hero": {
+    "eyebrow": "Melbourne's Craft Spirits Collective",
+    "headline": "Pinto Spirits",
+    "subtitle": "Building the brands that bartenders believe in — from distillery floor to venue floor.",
+    "cta_text": "Let's Talk"
+  }
+}
