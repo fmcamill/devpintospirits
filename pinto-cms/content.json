@@ -1,7 +1,7 @@
 {
   "hero": {
     "bg_image": "",
-    "eyebrow": "Melbourne's Craft Spirits Collective",
+    "eyebrow": "Melbourne's Craft Spirits Collective - TEST",
     "headline": "Pinto Spirits",
     "subtitle": "Building the brands that bartenders believe in — from distillery floor to venue floor.",
     "cta_text": "Let's Talk"
@@ -24,8 +24,14 @@
         "image": "",
         "gallery": [],
         "products": [
-          {"name": "Signature Expression", "note": "Ex-bourbon casks, 46% ABV"},
-          {"name": "Cask Strength", "note": "Limited release, 62% ABV"}
+          {
+            "name": "Signature Expression",
+            "note": "Ex-bourbon casks, 46% ABV"
+          },
+          {
+            "name": "Cask Strength",
+            "note": "Limited release, 62% ABV"
+          }
         ]
       },
       {
@@ -36,8 +42,14 @@
         "image": "",
         "gallery": [],
         "products": [
-          {"name": "London Dry", "note": "Classic juniper-forward profile"},
-          {"name": "Barrel Aged", "note": "6 months in Australian oak"}
+          {
+            "name": "London Dry",
+            "note": "Classic juniper-forward profile"
+          },
+          {
+            "name": "Barrel Aged",
+            "note": "6 months in Australian oak"
+          }
         ]
       },
       {
@@ -48,8 +60,14 @@
         "image": "",
         "gallery": [],
         "products": [
-          {"name": "White Rum", "note": "Unaged, pure cane character"},
-          {"name": "Dark Rum", "note": "3 year aged, tropical notes"}
+          {
+            "name": "White Rum",
+            "note": "Unaged, pure cane character"
+          },
+          {
+            "name": "Dark Rum",
+            "note": "3 year aged, tropical notes"
+          }
         ]
       }
     ]
