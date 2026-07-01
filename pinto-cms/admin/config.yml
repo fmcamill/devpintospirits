@@ -1,0 +1,124 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: assets/images
+public_folder: /assets/images
+
+locale: en
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - name: "content"
+        label: "Homepage Content"
+        file: "content.json"
+        format: json
+        fields:
+
+          - label: "🏠 Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - label: "Background Image"
+                name: "bg_image"
+                widget: "image"
+                required: false
+                hint: "Full-width photo behind the hero. Recommended landscape, 1920×1080px minimum."
+              - label: "Eyebrow Text"
+                name: "eyebrow"
+                widget: "string"
+                hint: "Small text above the main title"
+              - label: "Main Headline"
+                name: "headline"
+                widget: "string"
+              - label: "Subtitle"
+                name: "subtitle"
+                widget: "text"
+              - label: "Button Text"
+                name: "cta_text"
+                widget: "string"
+
+          - label: "📖 About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - label: "Portrait Photo"
+                name: "photo"
+                widget: "image"
+                required: false
+                hint: "Paul's photo. Recommended portrait orientation, 800×1000px."
+              - label: "Section Heading"
+                name: "heading"
+                widget: "string"
+              - label: "First Paragraph"
+                name: "body_1"
+                widget: "text"
+              - label: "Second Paragraph"
+                name: "body_2"
+                widget: "text"
+              - label: "Pull Quote"
+                name: "quote"
+                widget: "string"
+                hint: "The italicised quote shown in the sidebar"
+
+          - label: "🥃 Brands"
+            name: "brands"
+            widget: "object"
+            fields:
+              - label: "Section Intro Text"
+                name: "intro"
+                widget: "string"
+              - label: "Brand List"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - {label: "Brand Name", name: "name", widget: "string"}
+                  - {label: "Category Tag (e.g. Craft Gin)", name: "tag", widget: "string"}
+                  - {label: "Tagline", name: "tagline", widget: "string"}
+                  - {label: "Story (shown when clicked)", name: "story", widget: "text"}
+                  - label: "Featured Image"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - label: "Gallery Images (up to 4)"
+                    name: "gallery"
+                    widget: "list"
+                    max: 4
+                    summary: "Image {{index}}"
+                    field: {label: "Image", name: "src", widget: "image"}
+                  - label: "Products"
+                    name: "products"
+                    widget: "list"
+                    summary: "{{fields.name}}"
+                    fields:
+                      - {label: "Product Name", name: "name", widget: "string"}
+                      - {label: "Description", name: "note", widget: "string"}
+
+          - label: "🖼️ Gallery"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - label: "Gallery Images"
+                name: "images"
+                widget: "list"
+                summary: "Image {{index}}"
+                field: {label: "Image", name: "src", widget: "image"}
+
+          - label: "✉️ Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Email Address", name: "email", widget: "string"}
+              - {label: "Phone Number", name: "phone", widget: "string"}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "Instagram URL", name: "ig_url", widget: "string", required: false}
+              - {label: "LinkedIn URL", name: "li_url", widget: "string", required: false}
+
+          - label: "⚙️ Settings"
+            name: "site"
+            widget: "object"
+            fields:
+              - {label: "Show Journal Section", name: "show_journal", widget: "boolean", default: true, hint: "Toggle the journal/blog section on the homepage"}

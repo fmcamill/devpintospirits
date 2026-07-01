@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Journal — Pinto Spirits</title>
+  <meta name="description" content="Stories from the cellar — insights on craft spirits, bartender culture, and the brands we believe in.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pinto.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="ps-nav is-scrolled" id="psNav">
+  <a href="index.html" class="ps-nav__logo">Pinto Spirits<span>.</span></a>
+  <ul class="ps-nav__links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#brands">Brands</a></li>
+    <li><a href="index.html#gallery">Gallery</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="index.html#contact" class="ps-nav__cta">Let's Talk</a></li>
+  </ul>
+  <button class="ps-nav__hamburger" id="psHamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="ps-nav-mobile" id="psMobileNav">
+  <button class="ps-nav-mobile__close" id="psNavClose">✕</button>
+  <a href="index.html#about" class="ps-mobile-link">About</a>
+  <a href="index.html#brands" class="ps-mobile-link">Brands</a>
+  <a href="index.html#gallery" class="ps-mobile-link">Gallery</a>
+  <a href="journal.html" class="ps-mobile-link">Journal</a>
+  <a href="index.html#contact" class="ps-mobile-link">Let's Talk</a>
+</div>
+
+<!-- HERO -->
+<section class="ps-journal-hero">
+  <span class="ps-journal-hero__eyebrow">From the Cellar</span>
+  <h1 class="ps-journal-hero__h1">The Journal</h1>
+  <p class="ps-journal-hero__sub">Insights on craft spirits, bartender culture, and the brands we believe in.</p>
+</section>
+
+<!-- POSTS -->
+<!-- To add a post, copy one of the ps-post-card divs below and update the content.
+     Add a link href pointing to your post HTML file. -->
+<section class="ps-journal-posts">
+  <div class="ps-container">
+    <div class="ps-journal-grid ps-reveal">
+
+      <a href="#" class="ps-post-card">
+        <div class="ps-post-card__image"></div>
+        <div class="ps-post-card__content">
+          <span class="ps-post-category">Distilling</span>
+          <h4>The Art of Australian Single Malt</h4>
+          <time class="ps-post-meta">Coming soon</time>
+        </div>
+      </a>
+
+      <a href="#" class="ps-post-card">
+        <div class="ps-post-card__image"></div>
+        <div class="ps-post-card__content">
+          <span class="ps-post-category">Bartenders</span>
+          <h4>What Melbourne's Best Bars Are Pouring</h4>
+          <time class="ps-post-meta">Coming soon</time>
+        </div>
+      </a>
+
+      <a href="#" class="ps-post-card">
+        <div class="ps-post-card__image"></div>
+        <div class="ps-post-card__content">
+          <span class="ps-post-category">Brand Building</span>
+          <h4>From Distillery to Bar: The Gap in Between</h4>
+          <time class="ps-post-meta">Coming soon</time>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="ps-reveal" style="text-align:center;padding-top:5rem;padding-bottom:2rem">
+      <p class="ps-section-label" style="text-align:center">More Stories</p>
+      <p style="color:var(--ps-gray-400);font-size:0.9rem;margin-top:0.5rem">New articles coming soon — check back regularly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ps-footer">
+  <div class="ps-container">
+    <div class="ps-footer__inner">
+      <span class="ps-footer__logo">Pinto Spirits<span style="color:var(--ps-gold)">.</span></span>
+      <ul class="ps-footer__nav">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#brands">Brands</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <p class="ps-footer__copy">© <span id="psYear"></span> Pinto Spirits. Melbourne, Australia.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/pinto.js"></script>
+</body>
+</html>

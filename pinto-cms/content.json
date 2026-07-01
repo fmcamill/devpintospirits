@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "bg_image": "",
+    "eyebrow": "Melbourne's Craft Spirits Collective",
+    "headline": "Pinto Spirits",
+    "subtitle": "Building the brands that bartenders believe in — from distillery floor to venue floor.",
+    "cta_text": "Let's Talk"
+  },
+  "about": {
+    "photo": "",
+    "heading": "About Pinto Spirits",
+    "body_1": "Paul Slater has spent over fifteen years at the sharp end of premium spirits — from building Starwards into one of Melbourne's most respected craft labels, to leading brand development for Archie Rose Distilling Co. in Sydney.",
+    "body_2": "Pinto Spirits is his independent incubator: a curated collective of extraordinary local producers who deserve the same stage as the world's great spirit brands. We handle on-trade strategy, brand education, and venue placement — everything between a great liquid and the right glass.",
+    "quote": "Fifteen years building brands that bartenders believe in."
+  },
+  "brands": {
+    "intro": "Three distinct brands. Each chosen for character, craft, and the story behind the bottle.",
+    "items": [
+      {
+        "name": "Brand One",
+        "tag": "Single Malt Whisky",
+        "tagline": "A story told in every dram.",
+        "story": "A story of craft, patience, and Australian terroir. This brand represents the pinnacle of local distilling — each batch a conversation between grain, water, and time.",
+        "image": "",
+        "gallery": [],
+        "products": [
+          {"name": "Signature Expression", "note": "Ex-bourbon casks, 46% ABV"},
+          {"name": "Cask Strength", "note": "Limited release, 62% ABV"}
+        ]
+      },
+      {
+        "name": "Brand Two",
+        "tag": "Craft Gin",
+        "tagline": "Victorian botanicals, world-class craft.",
+        "story": "Botanicals sourced from across Victoria's diverse landscapes — from coastal sea herbs to alpine wildflowers. A gin built for the bartenders who demand more.",
+        "image": "",
+        "gallery": [],
+        "products": [
+          {"name": "London Dry", "note": "Classic juniper-forward profile"},
+          {"name": "Barrel Aged", "note": "6 months in Australian oak"}
+        ]
+      },
+      {
+        "name": "Brand Three",
+        "tag": "Rum",
+        "tagline": "Queensland cane, world-class spirit.",
+        "story": "Queensland sugarcane meets meticulous small-batch distilling. An Australian rum with the depth and complexity to sit alongside the world's finest.",
+        "image": "",
+        "gallery": [],
+        "products": [
+          {"name": "White Rum", "note": "Unaged, pure cane character"},
+          {"name": "Dark Rum", "note": "3 year aged, tropical notes"}
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "images": []
+  },
+  "contact": {
+    "email": "hello@pintospirits.com",
+    "phone": "+61 3 9000 0000",
+    "location": "Melbourne, VIC, Australia",
+    "ig_url": "",
+    "li_url": ""
+  },
+  "site": {
+    "show_journal": true
+  }
+}

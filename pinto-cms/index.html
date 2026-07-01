@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pinto Spirits — Melbourne's Craft Spirits Collective</title>
+  <meta name="description" content="Pinto Spirits is Melbourne's independent craft spirits incubator — building brands that bartenders believe in.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pinto.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="ps-nav" id="psNav">
+  <a href="#home" class="ps-nav__logo">Pinto Spirits<span>.</span></a>
+  <ul class="ps-nav__links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#brands">Brands</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li id="psNavJournal"><a href="journal.html">Journal</a></li>
+    <li><a href="#contact" class="ps-nav__cta">Let's Talk</a></li>
+  </ul>
+  <button class="ps-nav__hamburger" id="psHamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="ps-nav-mobile" id="psMobileNav">
+  <button class="ps-nav-mobile__close" id="psNavClose">✕</button>
+  <a href="#about" class="ps-mobile-link">About</a>
+  <a href="#brands" class="ps-mobile-link">Brands</a>
+  <a href="#gallery" class="ps-mobile-link">Gallery</a>
+  <a href="journal.html" class="ps-mobile-link" id="psMobileJournal">Journal</a>
+  <a href="#contact" class="ps-mobile-link">Let's Talk</a>
+</div>
+
+<!-- HERO -->
+<section class="ps-hero" id="home">
+  <div class="ps-hero__bg" id="psHeroBg"></div>
+  <div class="ps-hero__overlay"></div>
+  <div class="ps-hero__content">
+    <p class="ps-hero__eyebrow" id="psHeroEyebrow">Melbourne's Craft Spirits Collective</p>
+    <h1 class="ps-hero__h1" id="psHeroH1">Pinto<br>Spirits</h1>
+    <p class="ps-hero__sub" id="psHeroSub">Building the brands that bartenders believe in — from distillery floor to venue floor.</p>
+    <a href="#contact" class="ps-btn-primary" id="psHeroCta">Let's Talk</a>
+  </div>
+  <div class="ps-hero__scroll-line" aria-hidden="true"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="ps-about ps-section" id="about">
+  <div class="ps-container">
+    <div class="ps-about__grid">
+      <div class="ps-about__image ps-reveal" id="psAboutImageWrap"></div>
+      <div class="ps-about__text ps-reveal">
+        <p class="ps-section-label">Our Story</p>
+        <h2 class="ps-section-h2" id="psAboutHeading">About Pinto Spirits</h2>
+        <div class="ps-gold-line"></div>
+        <p class="ps-about__body-copy" id="psAboutBody1">Paul Slater has spent over fifteen years at the sharp end of premium spirits — from building Starwards into one of Melbourne's most respected craft labels, to leading brand development for Archie Rose Distilling Co. in Sydney.</p>
+        <p class="ps-about__body-copy" id="psAboutBody2">Pinto Spirits is his independent incubator: a curated collective of extraordinary local producers who deserve the same stage as the world's great spirit brands. We handle on-trade strategy, brand education, and venue placement — everything between a great liquid and the right glass.</p>
+        <blockquote class="ps-pull-quote" id="psAboutQuote"><p>"Fifteen years building brands that bartenders believe in."</p></blockquote>
+        <a href="about.html" class="ps-btn-ghost">Read Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="ps-brands ps-section" id="brands">
+  <div class="ps-container">
+    <div class="ps-brands__header ps-reveal">
+      <div>
+        <p class="ps-section-label">Portfolio</p>
+        <h2 class="ps-section-h2">The Portfolio</h2>
+        <div class="ps-gold-line"></div>
+        <p class="ps-brands__intro" id="psBrandsIntro">Three distinct brands. Each chosen for character, craft, and the story behind the bottle.</p>
+      </div>
+    </div>
+    <div class="ps-reveal">
+      <div class="ps-brands-grid" id="psBrandsGrid">
+
+        <div class="ps-brand-card"
+             data-name="Brand One"
+             data-tag="Single Malt Whisky"
+             data-story="A story of craft, patience, and Australian terroir. This brand represents the pinnacle of local distilling — each batch a conversation between grain, water, and time."
+             data-gallery='[]'
+             data-products='[{"name":"Signature Expression","note":"Ex-bourbon casks, 46% ABV"},{"name":"Cask Strength","note":"Limited release, 62% ABV"}]'>
+          <div class="ps-brand-card__placeholder"></div>
+          <div class="ps-brand-card__overlay"></div>
+          <div class="ps-brand-card__content">
+            <span class="ps-brand-tag">Single Malt Whisky</span>
+            <h3>Brand One</h3>
+            <p class="ps-brand-tagline">A story told in every dram.</p>
+            <span class="ps-brand-discover">Discover →</span>
+          </div>
+        </div>
+
+        <div class="ps-brand-card"
+             data-name="Brand Two"
+             data-tag="Craft Gin"
+             data-story="Botanicals sourced from across Victoria's diverse landscapes — from coastal sea herbs to alpine wildflowers. A gin built for bartenders who demand more."
+             data-gallery='[]'
+             data-products='[{"name":"London Dry","note":"Classic juniper-forward profile"},{"name":"Barrel Aged","note":"6 months in Australian oak"}]'>
+          <div class="ps-brand-card__placeholder"></div>
+          <div class="ps-brand-card__overlay"></div>
+          <div class="ps-brand-card__content">
+            <span class="ps-brand-tag">Craft Gin</span>
+            <h3>Brand Two</h3>
+            <p class="ps-brand-tagline">Victorian botanicals, world-class craft.</p>
+            <span class="ps-brand-discover">Discover →</span>
+          </div>
+        </div>
+
+        <div class="ps-brand-card"
+             data-name="Brand Three"
+             data-tag="Rum"
+             data-story="Queensland sugarcane meets meticulous small-batch distilling. An Australian rum with the depth and complexity to sit alongside the world's finest."
+             data-gallery='[]'
+             data-products='[{"name":"White Rum","note":"Unaged, pure cane character"},{"name":"Dark Rum","note":"3 year aged, tropical notes"}]'>
+          <div class="ps-brand-card__placeholder"></div>
+          <div class="ps-brand-card__overlay"></div>
+          <div class="ps-brand-card__content">
+            <span class="ps-brand-tag">Rum</span>
+            <h3>Brand Three</h3>
+            <p class="ps-brand-tagline">Queensland cane, world-class spirit.</p>
+            <span class="ps-brand-discover">Discover →</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="ps-gallery-section" id="gallery">
+  <div class="ps-gallery__label ps-container">
+    <div>
+      <p class="ps-section-label">Life at Pinto</p>
+      <h2 class="ps-section-h2" style="margin-bottom:0">Gallery</h2>
+    </div>
+  </div>
+  <div class="ps-gallery">
+    <div class="ps-gallery__wrap">
+      <div class="ps-gallery__slider" id="psGallerySlider">
+        <div class="ps-gallery__slide" style="display:flex;align-items:center;justify-content:center">
+          <p style="color:var(--ps-gray-400);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;margin:0">Add your images here</p>
+        </div>
+        <div class="ps-gallery__slide"></div>
+        <div class="ps-gallery__slide"></div>
+        <div class="ps-gallery__slide"></div>
+      </div>
+    </div>
+    <div class="ps-gallery__controls">
+      <button class="ps-gallery__btn" id="psGalPrev" aria-label="Previous">‹</button>
+      <button class="ps-gallery__btn" id="psGalNext" aria-label="Next">›</button>
+      <div class="ps-gallery__dots" id="psGalleryDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNAL TEASER -->
+<section class="ps-blog ps-section" id="blog">
+  <div class="ps-container">
+    <div class="ps-blog__header ps-reveal">
+      <div>
+        <p class="ps-section-label">From the Cellar</p>
+        <h2 class="ps-section-h2">The Journal</h2>
+        <div class="ps-gold-line"></div>
+      </div>
+      <a href="journal.html" class="ps-btn-ghost">Visit the Journal</a>
+    </div>
+    <div class="ps-featured-post ps-reveal">
+      <div class="ps-featured-post__image"></div>
+      <div class="ps-featured-post__content">
+        <span class="ps-post-category">Spirits</span>
+        <h3><a href="journal.html">Stories from the Cellar — Coming Soon</a></h3>
+        <p>Insights from fifteen years in premium spirits — brand stories, bartender profiles, and the craft behind the bottle.</p>
+        <time class="ps-post-meta">Melbourne, 2025</time>
+        <div style="margin-top:1.25rem"><a href="journal.html" class="ps-btn-ghost">Visit the Journal</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="ps-contact ps-section" id="contact">
+  <div class="ps-container">
+    <div class="ps-contact__grid">
+      <div class="ps-contact__info ps-reveal">
+        <p class="ps-section-label">Get in Touch</p>
+        <h2 class="ps-section-h2">Let's Talk</h2>
+        <div class="ps-gold-line"></div>
+        <p class="ps-contact__sub">Whether you're a bar owner looking to list something special, a brand founder seeking representation, or a venue manager building a spirits programme — we want to hear from you.</p>
+        <div class="ps-contact__detail">
+          <div class="ps-contact__icon">@</div>
+          <a id="psContactEmail" href="mailto:hello@pintospirits.com">hello@pintospirits.com</a>
+        </div>
+        <div class="ps-contact__detail">
+          <div class="ps-contact__icon">℡</div>
+          <span id="psContactPhone">+61 3 9000 0000</span>
+        </div>
+        <div class="ps-contact__detail">
+          <div class="ps-contact__icon">⌖</div>
+          <span id="psContactLocation">Melbourne, VIC, Australia</span>
+        </div>
+        <div class="ps-social-links" id="psSocialLinks">
+          <a class="ps-social-link" href="#" aria-label="Instagram">IG</a>
+          <a class="ps-social-link" href="#" aria-label="LinkedIn">LI</a>
+        </div>
+      </div>
+      <div class="ps-reveal">
+        <form class="ps-contact-form" id="psContactForm"
+              name="contact" method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <div class="ps-form-row">
+            <div class="ps-form-field">
+              <label for="ps_fname">Name</label>
+              <input type="text" id="ps_fname" name="name" placeholder="Your name" required>
+            </div>
+            <div class="ps-form-field">
+              <label for="ps_femail">Email</label>
+              <input type="email" id="ps_femail" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="ps-form-row">
+            <div class="ps-form-field">
+              <label for="ps_fphone">Phone</label>
+              <input type="tel" id="ps_fphone" name="phone" placeholder="+61 4XX XXX XXX">
+            </div>
+            <div class="ps-form-field">
+              <label for="ps_fvenue">Venue / Brand</label>
+              <input type="text" id="ps_fvenue" name="venue" placeholder="Where you work">
+            </div>
+          </div>
+          <div class="ps-form-field">
+            <label for="ps_frole">Your Role</label>
+            <select id="ps_frole" name="role">
+              <option value="">Select your role</option>
+              <option>Bar Owner</option>
+              <option>Bar Manager</option>
+              <option>Venue Manager</option>
+              <option>Operations Manager</option>
+              <option>Beverage Buyer</option>
+              <option>Brand Founder</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="ps-form-field">
+            <label for="ps_fmessage">Message</label>
+            <textarea id="ps_fmessage" name="message" placeholder="Tell us what you're after…" required></textarea>
+          </div>
+          <button type="submit" class="ps-form-submit">Send Message</button>
+          <div class="ps-form-success" id="psFormSuccess">✓ &nbsp; Thanks — we'll be in touch within one business day.</div>
+          <div class="ps-form-error" id="psFormError"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ps-footer">
+  <div class="ps-container">
+    <div class="ps-footer__inner">
+      <span class="ps-footer__logo">Pinto Spirits<span style="color:var(--ps-gold)">.</span></span>
+      <ul class="ps-footer__nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="ps-footer__copy">© <span id="psYear"></span> Pinto Spirits. Melbourne, Australia.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Brand modal -->
+<div class="ps-modal-backdrop" id="psBrandModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="ps-modal">
+    <button class="ps-modal__close" id="psBrandModalClose" aria-label="Close">✕</button>
+    <div class="ps-modal__hero" id="psBrandModalHero"></div>
+    <div class="ps-modal__body" id="psBrandModalBody"></div>
+  </div>
+</div>
+
+<script src="assets/js/pinto.js"></script>
+<script>
+/* Content loader — reads content.json and populates all editable sections */
+(function () {
+  function escAttr(str) {
+    return (str || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  fetch('/content.json')
+    .then(function (r) { return r.json(); })
+    .then(function (c) {
+
+      /* ── Hero ── */
+      if (c.hero) {
+        var heroBg = document.getElementById('psHeroBg');
+        if (heroBg && c.hero.bg_image) {
+          heroBg.style.backgroundImage = 'url(' + c.hero.bg_image + ')';
+          heroBg.style.backgroundSize = 'cover';
+          heroBg.style.backgroundPosition = 'center';
+        }
+        var eyebrow = document.getElementById('psHeroEyebrow');
+        if (eyebrow && c.hero.eyebrow) eyebrow.textContent = c.hero.eyebrow;
+
+        var h1 = document.getElementById('psHeroH1');
+        if (h1 && c.hero.headline) {
+          var parts = c.hero.headline.split(' ');
+          h1.innerHTML = parts.length > 1
+            ? parts[0] + '<br>' + parts.slice(1).join(' ')
+            : c.hero.headline;
+        }
+        var sub = document.getElementById('psHeroSub');
+        if (sub && c.hero.subtitle) sub.textContent = c.hero.subtitle;
+
+        var cta = document.getElementById('psHeroCta');
+        if (cta && c.hero.cta_text) cta.textContent = c.hero.cta_text;
+      }
+
+      /* ── About ── */
+      if (c.about) {
+        var imgWrap = document.getElementById('psAboutImageWrap');
+        if (imgWrap) {
+          imgWrap.innerHTML = c.about.photo
+            ? '<img src="' + c.about.photo + '" alt="' + escAttr(c.about.heading || 'Pinto Spirits') + '">'
+            : '';
+        }
+        var heading = document.getElementById('psAboutHeading');
+        if (heading && c.about.heading) heading.textContent = c.about.heading;
+
+        var b1 = document.getElementById('psAboutBody1');
+        if (b1 && c.about.body_1) b1.textContent = c.about.body_1;
+
+        var b2 = document.getElementById('psAboutBody2');
+        if (b2 && c.about.body_2) b2.textContent = c.about.body_2;
+
+        var quote = document.getElementById('psAboutQuote');
+        if (quote && c.about.quote) quote.innerHTML = '<p>“' + c.about.quote + '”</p>';
+      }
+
+      /* ── Brands ── */
+      if (c.brands) {
+        var intro = document.getElementById('psBrandsIntro');
+        if (intro && c.brands.intro) intro.textContent = c.brands.intro;
+
+        var grid = document.getElementById('psBrandsGrid');
+        if (grid && c.brands.items && c.brands.items.length) {
+          grid.innerHTML = c.brands.items.map(function (brand) {
+            var galleryUrls = (brand.gallery || []).map(function (g) {
+              return typeof g === 'string' ? g : (g.src || '');
+            }).filter(Boolean);
+            var imgHtml = brand.image
+              ? '<img src="' + brand.image + '" alt="' + escAttr(brand.name) + '" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0">'
+              : '<div class="ps-brand-card__placeholder"></div>';
+            return '<div class="ps-brand-card"' +
+              ' data-name="' + escAttr(brand.name) + '"' +
+              ' data-tag="' + escAttr(brand.tag) + '"' +
+              ' data-story="' + escAttr(brand.story) + '"' +
+              ' data-gallery=\'' + JSON.stringify(galleryUrls) + '\'' +
+              ' data-products=\'' + JSON.stringify(brand.products || []) + '\'' +
+              ' tabindex="0" role="button">' +
+              imgHtml +
+              '<div class="ps-brand-card__overlay"></div>' +
+              '<div class="ps-brand-card__content">' +
+                '<span class="ps-brand-tag">' + escAttr(brand.tag) + '</span>' +
+                '<h3>' + escAttr(brand.name) + '</h3>' +
+                '<p class="ps-brand-tagline">' + escAttr(brand.tagline) + '</p>' +
+                '<span class="ps-brand-discover">Discover →</span>' +
+              '</div>' +
+            '</div>';
+          }).join('');
+          if (window.initBrandCards) window.initBrandCards();
+        }
+      }
+
+      /* ── Gallery ── */
+      if (c.gallery && c.gallery.images && c.gallery.images.length) {
+        var slider = document.getElementById('psGallerySlider');
+        if (slider) {
+          slider.innerHTML = c.gallery.images.map(function (img) {
+            var src = typeof img === 'string' ? img : (img.src || '');
+            return '<div class="ps-gallery__slide"><img src="' + src + '" alt="Pinto Spirits" loading="lazy"></div>';
+          }).join('');
+          if (window.initGallerySlider) window.initGallerySlider();
+        }
+      }
+
+      /* ── Contact ── */
+      if (c.contact) {
+        var emailEl = document.getElementById('psContactEmail');
+        if (emailEl && c.contact.email) {
+          emailEl.textContent = c.contact.email;
+          emailEl.href = 'mailto:' + c.contact.email;
+        }
+        var phoneEl = document.getElementById('psContactPhone');
+        if (phoneEl && c.contact.phone) phoneEl.textContent = c.contact.phone;
+
+        var locEl = document.getElementById('psContactLocation');
+        if (locEl && c.contact.location) locEl.textContent = c.contact.location;
+
+        var socialEl = document.getElementById('psSocialLinks');
+        if (socialEl) {
+          var links = '';
+          if (c.contact.ig_url) links += '<a class="ps-social-link" href="' + c.contact.ig_url + '" target="_blank" rel="noopener" aria-label="Instagram">IG</a>';
+          if (c.contact.li_url) links += '<a class="ps-social-link" href="' + c.contact.li_url + '" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>';
+          if (links) socialEl.innerHTML = links;
+        }
+      }
+
+      /* ── Settings ── */
+      if (c.site && c.site.show_journal === false) {
+        var blog = document.getElementById('blog');
+        if (blog) blog.style.display = 'none';
+        var navJournal = document.getElementById('psNavJournal');
+        if (navJournal) navJournal.style.display = 'none';
+        var mobileJournal = document.getElementById('psMobileJournal');
+        if (mobileJournal) mobileJournal.style.display = 'none';
+      }
+    })
+    .catch(function () { /* keep hardcoded defaults if fetch fails */ });
+})();
+</script>
+</body>
+</html>
