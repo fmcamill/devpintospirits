@@ -74,6 +74,12 @@
             "note": "3 year aged, tropical notes"
           }
         ]
+      },
+      {
+        "name": "Brand 4",
+        "tag": "Gin",
+        "tagline": "Queensland cane, world-class spirit.",
+        "story": "Test"
       }
     ]
   },
