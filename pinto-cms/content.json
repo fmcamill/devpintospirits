@@ -87,6 +87,6 @@
     "li_url": ""
   },
   "site": {
-    "show_journal": true
+    "show_journal": false
   }
 }
