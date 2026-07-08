@@ -113,3 +113,56 @@ collections:
             widget: "object"
             fields:
               - {label: "Show Journal Section", name: "show_journal", widget: "boolean", default: true, hint: "Toggle the journal section on the homepage and in the navigation"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+
+      - name: "about"
+        label: "About Page"
+        file: "pinto-cms/about.json"
+        format: json
+
+        fields:
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+
+              - label: "Title"
+                name: "title"
+                widget: "string"
+
+              - label: "Subtitle"
+                name: "subtitle"
+                widget: "text"
+
+          - label: "Founder"
+            name: "founder"
+            widget: "object"
+            fields:
+
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+
+              - label: "Name"
+                name: "name"
+                widget: "string"
+
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field:
+                  label: Paragraph
+                  name: paragraph
+                  widget: text
+
+              - label: "Quote"
+                name: "quote"
+                widget: "string"
