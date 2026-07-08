@@ -45,11 +45,11 @@ collections:
             name: "about"
             widget: "object"
             fields:
-              - label: "Portrait Photo"
+              - label: "Photo"
                 name: "photo"
                 widget: "image"
                 required: false
-                hint: "Paul's photo. Recommended portrait orientation, 800×1000px."
+                hint: "About section image. Recommended portrait orientation, 800×1000px."
               - label: "Section Heading"
                 name: "heading"
                 widget: "string"
@@ -62,7 +62,7 @@ collections:
               - label: "Pull Quote"
                 name: "quote"
                 widget: "string"
-                hint: "The italicised quote shown in the sidebar"
+                hint: "The quote shown below the paragraphs"
 
           - label: "🥃 Brands"
             name: "brands"
@@ -79,24 +79,17 @@ collections:
                   - {label: "Brand Name", name: "name", widget: "string"}
                   - {label: "Category Tag (e.g. Craft Gin)", name: "tag", widget: "string"}
                   - {label: "Tagline", name: "tagline", widget: "string"}
-                  - {label: "Story (shown when clicked)", name: "story", widget: "text"}
-                  - label: "Featured Image"
+                  - {label: "Story (shown in the pop-up)", name: "story", widget: "text", hint: "Separate paragraphs with a blank line."}
+                  - label: "Card Image"
                     name: "image"
                     widget: "image"
                     required: false
-                  - label: "Gallery Images (up to 4)"
+                  - label: "Pop-up Gallery Images (up to 4)"
                     name: "gallery"
                     widget: "list"
                     max: 4
                     summary: "Image {{index}}"
                     field: {label: "Image", name: "src", widget: "image"}
-                  - label: "Products"
-                    name: "products"
-                    widget: "list"
-                    summary: "{{fields.name}}"
-                    fields:
-                      - {label: "Product Name", name: "name", widget: "string"}
-                      - {label: "Description", name: "note", widget: "string"}
 
           - label: "🖼️ Gallery"
             name: "gallery"
@@ -112,14 +105,11 @@ collections:
             name: "contact"
             widget: "object"
             fields:
-              - {label: "Email Address", name: "email", widget: "string"}
               - {label: "Phone Number", name: "phone", widget: "string"}
-              - {label: "Location", name: "location", widget: "string"}
               - {label: "Instagram URL", name: "ig_url", widget: "string", required: false}
-              - {label: "LinkedIn URL", name: "li_url", widget: "string", required: false}
 
           - label: "⚙️ Settings"
             name: "site"
             widget: "object"
             fields:
-              - {label: "Show Journal Section", name: "show_journal", widget: "boolean", default: true, hint: "Toggle the journal/blog section on the homepage"}
+              - {label: "Show Journal Section", name: "show_journal", widget: "boolean", default: true, hint: "Toggle the journal section on the homepage and in the navigation"}

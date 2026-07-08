@@ -2,6 +2,26 @@
 (function () {
   'use strict';
 
+  /* ── Age gate ── */
+  var ageGate = document.getElementById('psAgeGate');
+  if (ageGate) {
+    if (localStorage.getItem('ps-age-verified') === '1') {
+      ageGate.classList.add('is-hidden');
+    } else {
+      document.body.style.overflow = 'hidden';
+    }
+    var ageYes = document.getElementById('psAgeYes');
+    var ageNo  = document.getElementById('psAgeNo');
+    if (ageYes) ageYes.addEventListener('click', function () {
+      localStorage.setItem('ps-age-verified', '1');
+      ageGate.classList.add('is-hidden');
+      document.body.style.overflow = '';
+    });
+    if (ageNo) ageNo.addEventListener('click', function () {
+      window.location.href = 'https://www.drinkwise.org.au/';
+    });
+  }
+
   /* ── Nav scroll ── */
   var nav = document.getElementById('psNav');
   if (nav) {
@@ -47,11 +67,9 @@
 
   /* ── Gallery slider ── */
   var galCurPage = 0;
-
   function initGallerySlider() {
     var slider   = document.getElementById('psGallerySlider');
     var dotsWrap = document.getElementById('psGalleryDots');
-
     if (!slider) return;
 
     galCurPage = 0;
@@ -86,7 +104,6 @@
       }
     }
 
-    /* Clone prev/next to clear any stale event listeners from prior init */
     var btnPrevOld = document.getElementById('psGalPrev');
     var btnNextOld = document.getElementById('psGalNext');
     if (btnPrevOld) {
@@ -99,13 +116,28 @@
       btnNextOld.parentNode.replaceChild(btnNext, btnNextOld);
       btnNext.addEventListener('click', function () { goTo(galCurPage + 1); });
     }
-
     buildDots();
   }
-
   window.initGallerySlider = initGallerySlider;
   initGallerySlider();
   window.addEventListener('resize', function () { initGallerySlider(); });
+
+  /* ── Brands carousel (prev/next scroll) ── */
+  function initBrandsCarousel() {
+    var track = document.getElementById('psBrandsGrid');
+    if (!track) return;
+    function step() {
+      var card = track.querySelector('.ps-brand-card');
+      if (!card) return track.clientWidth * 0.8;
+      var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 24) || 24;
+      return card.getBoundingClientRect().width + gap;
+    }
+    var prev = document.getElementById('psBrandPrev');
+    var next = document.getElementById('psBrandNext');
+    if (prev) prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+    if (next) next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+  }
+  initBrandsCarousel();
 
   /* ── Brand modal ── */
   var modal      = document.getElementById('psBrandModal');
@@ -113,16 +145,21 @@
   var modalHero  = document.getElementById('psBrandModalHero');
   var modalBody  = document.getElementById('psBrandModalBody');
 
+  function esc(s) {
+    return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
   function buildModalGallery(hero, gallery, name) {
     if (!hero) return;
-    if (!gallery || gallery.length === 0) { hero.innerHTML = ''; return; }
+    if (!gallery || gallery.length === 0) { hero.innerHTML = ''; hero.style.display = 'none'; return; }
+    hero.style.display = '';
     if (gallery.length === 1) {
-      hero.innerHTML = '<img src="' + gallery[0] + '" alt="' + name + '">';
+      hero.innerHTML = '<img src="' + gallery[0] + '" alt="' + esc(name) + '">';
       return;
     }
     var slideHTML = gallery.map(function (url, i) {
       return '<div class="ps-mgal__slide' + (i === 0 ? ' is-active' : '') + '">' +
-        '<img src="' + url + '" alt="' + name + ' — image ' + (i + 1) + '" loading="lazy"></div>';
+        '<img src="' + url + '" alt="' + esc(name) + ' — image ' + (i + 1) + '" loading="lazy"></div>';
     }).join('');
     var dotHTML = gallery.map(function (_, i) {
       return '<button class="ps-mgal__dot' + (i === 0 ? ' is-active' : '') + '" data-idx="' + i + '" aria-label="Image ' + (i + 1) + '"></button>';
@@ -155,30 +192,23 @@
 
   function openModal(card) {
     if (!modal) return;
-    var name     = card.dataset.name    || '';
-    var tag      = card.dataset.tag     || '';
-    var story    = card.dataset.story   || '';
-    var gallery  = [];
-    var products = [];
-    try { gallery  = JSON.parse(card.dataset.gallery  || '[]'); } catch (e) {}
-    try { products = JSON.parse(card.dataset.products || '[]'); } catch (e) {}
+    var name    = card.dataset.name  || '';
+    var tag     = card.dataset.tag   || '';
+    var story   = card.dataset.story || '';
+    var gallery = [];
+    try { gallery = JSON.parse(card.dataset.gallery || '[]'); } catch (e) {}
 
     buildModalGallery(modalHero, gallery, name);
 
-    var productsHTML = '';
-    if (products.length) {
-      productsHTML = '<p class="ps-modal__products-label">Products</p><div class="ps-products-grid">';
-      products.forEach(function (p) {
-        productsHTML += '<div class="ps-product-card"><h4>' + p.name + '</h4><p>' + p.note + '</p></div>';
-      });
-      productsHTML += '</div>';
-    }
+    var storyHTML = story.split(/\n\s*\n/).map(function (t) {
+      return '<p>' + esc(t) + '</p>';
+    }).join('');
+
     if (modalBody) {
       modalBody.innerHTML =
-        '<span class="ps-brand-tag">' + tag + '</span>' +
-        '<h2>' + name + '</h2>' +
-        '<p>' + story + '</p>' +
-        productsHTML;
+        '<span class="ps-brand-tag">' + esc(tag) + '</span>' +
+        '<h2>' + esc(name) + '</h2>' +
+        storyHTML;
     }
     modal.classList.add('is-active');
     modal.setAttribute('aria-hidden', 'false');
@@ -202,7 +232,6 @@
       card.setAttribute('role', 'button');
     });
   }
-
   window.initBrandCards = initBrandCards;
   initBrandCards();
 
@@ -217,6 +246,7 @@
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
       var btn     = form.querySelector('.ps-form-submit');
       var success = document.getElementById('psFormSuccess');
       var error   = document.getElementById('psFormError');
@@ -248,7 +278,9 @@
   /* ── Smooth scroll for anchor links ── */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
-      var target = document.querySelector(this.getAttribute('href'));
+      var href = this.getAttribute('href');
+      if (href === '#') return;
+      var target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         var navH = nav ? nav.offsetHeight : 0;
