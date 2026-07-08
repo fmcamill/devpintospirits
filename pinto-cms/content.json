@@ -22,7 +22,12 @@
         "tagline": "A story told in every dram",
         "story": "Independently owned and operated since 2018, our 50-acre off-grid site, hidden away on the fringes of Kinglake National Park, gives us a home where we can make whisky differently.\n\nThe spring-fed lake at the heart of the property — vast, still, and pure — provides the foundation of our whisky. The water is used unfiltered and untreated, straight from the source.\n\nFar from main roads, flight paths, and housing, we're one of the few distilleries able to use open fermenters for our whisky wash. Surrounded by towering Mountain Ash, Messmate, and Peppermint gums, the air is thick with eucalyptus. Our open-door distilling invites native pollen and wild yeasts to become part of the process.\n\nClimate plays a major role in single malt production. While large temperature swings during barrel ageing are typical of Australian malts, the added element of Kinglake's high humidity makes our conditions unique. We are also experimenting with open-air ageing.\n\nKinglake Distillery was the first to produce an Australian certified carbon neutral whisky — achieved through a full carbon footprint audit, a commitment to ongoing annual reductions, and government-approved carbon offsetting.",
         "image": "assets/images/brand1-main.jpg",
-        "gallery": ["assets/images/brand1-a.jpg", "assets/images/brand1-b.jpg", "assets/images/brand1-c.jpg", "assets/images/brand1-d.jpg"]
+        "gallery": [
+          "assets/images/brand1-a.jpg",
+          "assets/images/brand1-b.jpg",
+          "assets/images/brand1-c.jpg",
+          "assets/images/brand1-d.jpg"
+        ]
       },
       {
         "name": "The Melbourne Gin Company",
@@ -30,7 +35,12 @@
         "tagline": "Victorian botanicals, world-class craft.",
         "story": "Inspired by a cultural capital, the Melbourne Gin Company (MGC) was established in 2012. Founded by Andrew Marks, a Yarra Valley winemaker living in inner-city Collingwood. Andrew sought to doff his hat to London Dry Gin by creating the very first Melbourne Dry Gin, pioneering a new local industry while merging twin loves for gin martinis and his hometown.\n\nMGC seeks to pay homage to a city celebrated for its culture and worthy of its own unique spirit. Made in stills that were designed for making perfume, the MGC makes classic gin with a twist of Melbourne. MGC takes an innovative approach to distillation. Its gins incorporate locally grown and native botanicals and fresh local rainwater.\n\nMGC Melbourne Dry Gin was the very first Australian gin to be launched with such ambition and paved the way for the emerging local gin industry.\n\nThe MGC is an independent distillery with an artisan production approach. Our gins are hand-crafted, batch distilled and non-chill filtered.",
         "image": "assets/images/brand2-main.jpg",
-        "gallery": ["assets/images/brand2-a.jpg", "assets/images/brand2-b.jpg", "assets/images/brand2-c.jpg", "assets/images/brand2-d.jpg"]
+        "gallery": [
+          "assets/images/brand2-a.jpg",
+          "assets/images/brand2-b.jpg",
+          "assets/images/brand2-c.jpg",
+          "assets/images/brand2-d.jpg"
+        ]
       },
       {
         "name": "Apple Pie Shine",
@@ -38,7 +48,12 @@
         "tagline": "The spirit of homemade tradition, reimagined in every pour.",
         "story": "A pioneering product in the resurgence of Australian distilling, Melbourne Moonshine Apple Pie Shine was first released in 2016. After fast becoming a cult favourite for its unpretentious deliciousness, it has gone on to win Gold medals and hearts alike.\n\nOur Apple Shine is made for mixing or drinking neat. Made using two different types of Victorian-grown apples which have been pressed and blended with triple-distilled moonshine (unaged whiskey). The shine is then spiced with a combination of cinnamon, nutmeg and clove, showcasing its unmistakable apple pie flavour.",
         "image": "assets/images/brand3-main.jpg",
-        "gallery": ["assets/images/brand3-a.jpg", "assets/images/brand3-b.jpg", "assets/images/brand3-c.jpg", "assets/images/brand3-d.jpg"]
+        "gallery": [
+          "assets/images/brand3-a.jpg",
+          "assets/images/brand3-b.jpg",
+          "assets/images/brand3-c.jpg",
+          "assets/images/brand3-d.jpg"
+        ]
       },
       {
         "name": "Punch & Ladle",
@@ -46,18 +61,32 @@
         "tagline": "Bar-quality cocktails, expertly bottled for every occasion.",
         "story": "Punch & Ladle is a Tasmanian company celebrated for its premium, handcrafted aperitifs and spritz cocktails.\n\nOur aperitifs embody the essence of Tasmania by creating a direct connection between local growers and consumers. We prioritise working with small, local farms and producers — using high-quality, sustainably sourced ingredients.\n\nEach product reflects Tasmania's unique terroir, allowing drinkers to experience the island's authentic flavours through thoughtfully crafted cocktails.\n\nThe emphasis on low-impact production aligns with our respect for the environment and a passion for reducing our ecological footprint. By using local ingredients, Punch & Ladle minimises transportation and supports the regional economy, fostering a deep connection between Tasmanian growers and those who enjoy their drinks.\n\nThis approach highlights the region's richness, with each drink telling a story of the land it came from, thus enhancing the drinking experience with a sense of place and purpose.",
         "image": "assets/images/brand4-main.jpg",
-        "gallery": ["assets/images/brand4-a.jpg", "assets/images/brand4-b.jpg", "assets/images/brand4-c.jpg", "assets/images/brand4-d.jpg"]
+        "gallery": [
+          "assets/images/brand4-a.jpg",
+          "assets/images/brand4-b.jpg",
+          "assets/images/brand4-c.jpg",
+          "assets/images/brand4-d.jpg"
+        ]
       }
     ]
   },
   "gallery": {
-    "images": ["assets/images/gallery-1.jpg", "assets/images/gallery-2.jpg", "assets/images/gallery-3.jpg", "assets/images/gallery-4.jpg", "assets/images/gallery-5.jpg", "assets/images/gallery-6.jpg", "assets/images/gallery-7.jpg", "assets/images/gallery-8.jpg"]
+    "images": [
+      "assets/images/gallery-1.jpg",
+      "assets/images/gallery-2.jpg",
+      "assets/images/gallery-3.jpg",
+      "assets/images/gallery-4.jpg",
+      "assets/images/gallery-5.jpg",
+      "assets/images/gallery-6.jpg",
+      "assets/images/gallery-7.jpg",
+      "assets/images/gallery-8.jpg"
+    ]
   },
   "contact": {
     "phone": "+61 402 849 665",
     "ig_url": "https://www.instagram.com/craft_spirits_paul/"
   },
   "site": {
-    "show_journal": true
+    "show_journal": false
   }
 }
