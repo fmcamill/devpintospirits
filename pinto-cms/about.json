@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "label": "Our Story",
+    "title": "About Pinto Spirits",
+    "subtitle": "The independent incubator building Australia's next great spirit brands."
+  },
+  "founder": {
+    "image": "assets/images/about-page-image.jpg",
+    "label": "The Founder",
+    "name": "Paul Slater",
+    "paragraphs": [
+      "Paul Slater founded Pinto Spirits after 20 years in the Australian spirits industry.",
+      "Before moving into brand strategy, Paul spent years working in hospitality, learning the industry from the floor up.",
+      "Pinto Spirits is an independent incubator built around a simple idea: local independent producers deserve the same platform as the world's great spirit brands."
+    ],
+    "quote": "The best spirits don't find bartenders. Great representation does."
+  }
+}
