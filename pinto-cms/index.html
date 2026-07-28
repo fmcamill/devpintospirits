@@ -40,12 +40,9 @@
     "knowsAbout": ["On-trade strategy", "Venue placement", "Bartender education", "Brand development", "Premium Australian spirits", "Craft distilling"]
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/pinto.css">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" integrity="sha384-dy2tW8xkhLIj8lZR42MCwZhhDb2cCewZiw0uA65CMpdHiJzL+iubx7HzHcCXU2rW" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -367,7 +364,7 @@
       if (c.hero) {
         var heroBg = document.getElementById('psHeroBg');
         if (heroBg && c.hero.bg_image) {
-          heroBg.style.backgroundImage = 'url(' + c.hero.bg_image + ')';
+          heroBg.style.backgroundImage = 'url(' + encodeURI(c.hero.bg_image) + ')';
           heroBg.style.backgroundSize = 'cover';
           heroBg.style.backgroundPosition = 'center';
         }
@@ -377,8 +374,8 @@
         if (h1 && c.hero.headline) {
           var parts = c.hero.headline.split(' ');
           h1.innerHTML = parts.length > 1
-            ? parts[0] + '<br>' + parts.slice(1).join(' ')
-            : c.hero.headline;
+            ? escAttr(parts[0]) + '<br>' + escAttr(parts.slice(1).join(' '))
+            : escAttr(c.hero.headline);
         }
         var sub = document.getElementById('psHeroSub');
         if (sub && c.hero.subtitle) sub.textContent = c.hero.subtitle;
@@ -391,7 +388,7 @@
         var imgWrap = document.getElementById('psAboutImageWrap');
         if (imgWrap) {
           imgWrap.innerHTML = c.about.photo
-            ? '<img src="' + c.about.photo + '" alt="' + escAttr(c.about.heading || 'Pinto Spirits') + '">'
+            ? '<img src="' + escAttr(c.about.photo) + '" alt="' + escAttr(c.about.heading || 'Pinto Spirits') + '">'
             : '';
         }
         var heading = document.getElementById('psAboutHeading');
@@ -401,7 +398,7 @@
         var b2 = document.getElementById('psAboutBody2');
         if (b2 && c.about.body_2) b2.textContent = c.about.body_2;
         var quote = document.getElementById('psAboutQuote');
-        if (quote && c.about.quote) quote.innerHTML = '<p>“' + c.about.quote + '”</p>';
+        if (quote && c.about.quote) quote.innerHTML = '<p>”' + escAttr(c.about.quote) + '”</p>';
       }
 
       /* ── Brands ── */
@@ -415,13 +412,13 @@
               return typeof g === 'string' ? g : (g.src || '');
             }).filter(Boolean);
             var imgHtml = brand.image
-              ? '<img src="' + brand.image + '" alt="' + escAttr(brand.name) + '">'
+              ? '<img src="' + escAttr(brand.image) + '" alt="' + escAttr(brand.name) + '">'
               : '<div class="ps-brand-card__placeholder"></div>';
             return '<div class="ps-brand-card"' +
               ' data-name="' + escAttr(brand.name) + '"' +
               ' data-tag="' + escAttr(brand.tag) + '"' +
               ' data-story="' + escAttr(brand.story) + '"' +
-              ' data-gallery=\'' + JSON.stringify(galleryUrls) + '\'>' +
+              ' data-gallery=\'' + escAttr(JSON.stringify(galleryUrls)) + '\'>' +
               imgHtml +
               '<div class="ps-brand-card__overlay"></div>' +
               '<div class="ps-brand-card__content">' +
@@ -442,7 +439,7 @@
         if (slider) {
           slider.innerHTML = c.gallery.images.map(function (img) {
             var src = typeof img === 'string' ? img : (img.src || '');
-            return '<div class="ps-gallery__slide"><img src="' + src + '" alt="Pinto Spirits" loading="lazy"></div>';
+            return '<div class="ps-gallery__slide"><img src="' + escAttr(src) + '" alt="Pinto Spirits" loading="lazy"></div>';
           }).join('');
           if (window.initGallerySlider) window.initGallerySlider();
         }

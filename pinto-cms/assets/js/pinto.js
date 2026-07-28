@@ -115,12 +115,12 @@
     if (!gallery || gallery.length === 0) { hero.innerHTML = ''; hero.style.display = 'none'; return; }
     hero.style.display = '';
     if (gallery.length === 1) {
-      hero.innerHTML = '<img src="' + gallery[0] + '" alt="' + esc(name) + '">';
+      hero.innerHTML = '<img src="' + esc(gallery[0]) + '" alt="' + esc(name) + '">';
       return;
     }
     var slideHTML = gallery.map(function (url, i) {
       return '<div class="ps-mgal__slide' + (i === 0 ? ' is-active' : '') + '">' +
-        '<img src="' + url + '" alt="' + esc(name) + ' — image ' + (i + 1) + '" loading="lazy"></div>';
+        '<img src="' + esc(url) + '" alt="' + esc(name) + ' — image ' + (i + 1) + '" loading="lazy"></div>';
     }).join('');
     var dotHTML = gallery.map(function (_, i) {
       return '<button class="ps-mgal__dot' + (i === 0 ? ' is-active' : '') + '" data-idx="' + i + '" aria-label="Image ' + (i + 1) + '"></button>';

@@ -32,6 +32,23 @@
   font-weight: 700; font-style: italic; font-display: swap;
 }
 
+/* ── Inter — self-hosted body font ── */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Light.woff2') format('woff2');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+
 :root {
   --ps-gold:       #C9973A;
   --ps-gold-light: #E8B85A;

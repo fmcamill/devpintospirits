@@ -1,2 +1,2 @@
-/*
-     Basic-Auth: pinto:12345pintospirits12345
+# Security headers are configured in netlify.toml
+# Do NOT store credentials in this file — manage Basic Auth via the Netlify dashboard
