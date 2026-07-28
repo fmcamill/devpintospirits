@@ -38,7 +38,7 @@
         "gallery": [
           "assets/images/brand2-a.jpg",
           "assets/images/brand2-b.jpg",
-          "assets/images/brand2-c.jpg",
+          "/assets/images/brand2-c.jpg",
           "assets/images/brand2-d.jpg"
         ]
       },
@@ -65,7 +65,7 @@
           "assets/images/brand4-a.jpg",
           "assets/images/brand4-b.jpg",
           "assets/images/brand4-c.jpg",
-          "assets/images/brand4-d.jpg"
+          "/assets/images/brand4-d.jpg"
         ]
       }
     ]
