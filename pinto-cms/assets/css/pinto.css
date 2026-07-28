@@ -290,6 +290,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 400;
 }
 .ps-hero__h1 {
+  font-family: var(--ps-font-heading);
   font-size: clamp(3rem, 7vw, 6.5rem);
   font-weight: 600;
   line-height: 1;
