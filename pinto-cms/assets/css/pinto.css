@@ -568,7 +568,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
-  padding: 1.5rem 3rem 3rem;
+  padding: 1.5rem 3rem 0;
 }
 .ps-gallery__btn {
   width: 40px; height: 40px;
@@ -785,7 +785,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .ps-posts-row { grid-template-columns: 1fr; }
   .ps-gallery__slide { flex: 0 0 85%; height: 340px; }
   .ps-gallery__label { padding: 2rem 1.5rem 1rem; }
-  .ps-gallery__controls { padding: 1rem 1.5rem 2rem; }
+  .ps-gallery__controls { padding: 1rem 1.5rem 0; }
+  .ps-carousel__controls { padding: 1rem 1.5rem 0; }
   .ps-modal__hero { height: 260px; }
   .ps-modal__body { padding: 1.5rem 1.5rem; }
   .ps-modal__body > p { font-size: 0.82rem; line-height: 1.7; margin-bottom: 1.1rem; }
