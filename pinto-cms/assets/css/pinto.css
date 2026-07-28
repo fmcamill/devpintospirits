@@ -296,6 +296,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   letter-spacing: -0.02em;
   color: var(--ps-white);
   margin-bottom: 1.25rem;
+  max-width: 480px;
 }
 .ps-hero__sub {
   font-size: 1rem;
