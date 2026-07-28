@@ -290,13 +290,21 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 400;
 }
 .ps-hero__h1 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(3rem, 7vw, 6.5rem);
   font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  line-height: 1;
+  letter-spacing: -0.03em;
   color: var(--ps-white);
   margin-bottom: 1.25rem;
   max-width: 480px;
+}
+.ps-sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
 .ps-hero__sub {
   font-size: 1rem;
@@ -832,7 +840,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 @media (max-width: 480px) {
-  .ps-hero__h1 { font-size: 2rem; }
+  .ps-hero__h1 { font-size: 3.5rem; }
   .ps-section-h2 { font-size: 1.8rem; }
 }
 
