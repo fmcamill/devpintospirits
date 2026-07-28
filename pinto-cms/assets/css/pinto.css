@@ -152,7 +152,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
 }
 .ps-nav__logo img {
-  height: 18px;
+  height: 34px;
   width: auto;
   display: block;
 }
@@ -699,7 +699,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .ps-footer { background: var(--ps-black); padding: 2.5rem 0; }
 .ps-footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem 2rem; }
 .ps-footer__logo { display: inline-flex; align-items: center; }
-.ps-footer__logo img { height: 18px; width: auto; display: block; }
+.ps-footer__logo img { height: 28px; width: auto; display: block; }
 .ps-footer__nav { display: flex; gap: 2rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
 .ps-footer__nav a { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.35); transition: color var(--ps-transition); font-weight: 400; }
 .ps-footer__nav a:hover { color: var(--ps-gold); }
