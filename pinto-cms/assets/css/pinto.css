@@ -152,11 +152,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
 }
 .ps-nav__logo img {
-  height: 34px;
+  height: 42px;
   width: auto;
   display: block;
+  transition: height var(--ps-transition);
 }
 .ps-nav__logo .ps-logo-dark { display: none; }
+.ps-nav.is-scrolled .ps-nav__logo img { height: 34px; }
 .ps-nav.is-scrolled .ps-nav__logo .ps-logo-white { display: none; }
 .ps-nav.is-scrolled .ps-nav__logo .ps-logo-dark { display: block; }
 
