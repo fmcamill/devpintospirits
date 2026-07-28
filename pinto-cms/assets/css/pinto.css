@@ -547,13 +547,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   gap: 1px;
   background: var(--ps-gray-200);
-  transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.ps-gallery__slider::-webkit-scrollbar { display: none; }
 .ps-gallery__slide {
   flex: 0 0 50%;
   height: 500px;
   overflow: hidden;
   background: var(--ps-gray-100);
+  scroll-snap-align: start;
 }
 .ps-gallery__slide img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
 .ps-gallery__slide:hover img { transform: scale(1.04); }
@@ -821,9 +827,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .ps-carousel__controls {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 1rem;
-  padding-top: 1.5rem;
-  margin-inline: auto;
+  padding: 1.5rem 3rem 0;
 }
 
 /* ── AGE GATE ── */
