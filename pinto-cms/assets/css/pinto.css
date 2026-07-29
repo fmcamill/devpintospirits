@@ -836,6 +836,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .ps-nav__links { display: none; }
   .ps-nav__hamburger { display: flex; }
   .ps-hero__content { padding: 0 1.5rem 3.5rem; }
+  .ps-hero__eyebrow { transform: translateY(calc(-100vh + 31rem)); }
   .ps-hero__scroll-line { left: 1.5rem; }
   .ps-brands-grid { grid-template-columns: 1fr; }
   .ps-posts-row { grid-template-columns: 1fr; }
