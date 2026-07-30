@@ -58,7 +58,7 @@
       {
         "name": "MGC The Melbourne Gin Company",
         "tag": "Craft Gin",
-        "tagline": "Victorian botanicals, world-class craft.",
+        "tagline": "Classic gin with a twist of Melbourne.",
         "story": "Inspired by a cultural capital, the Melbourne Gin Company (MGC) was established in 2012. \n\nFounded by Andrew Marks, a Yarra Valley winemaker living in inner-city Collingwood. Andrew sought to doff his hat to London Dry Gin by creating the very first Melbourne Dry Gin, pioneering a new local industry while merging twin loves for gin martinis and his hometown.\n\nMGC seeks to pay homage to a city celebrated for its culture and worthy of its own unique spirit. Made in stills that were designed for making perfume, the MGC makes classic gin with a twist of Melbourne. MGC takes an innovative approach to distillation. Its gins incorporate locally grown and native botanicals and fresh local rainwater.\n\nMGC Melbourne Dry Gin was the very first Australian gin to be launched with such ambition and paved the way for the emerging local gin industry.\n\nThe MGC is an independent distillery with an artisan production approach. Their gins are hand-crafted, batch-distilled, and non-chill-filtered. \n\nPinto Spirits is proud to work alongside the MGC Sales team, taking the lead in Melbourne’s Inner North and West.",
         "image": "assets/images/brand2-main.jpg",
         "gallery": [
@@ -72,7 +72,7 @@
   },
   "gallery": {
     "images": [
-      "assets/images/gallery-1.jpg",
+      "/assets/images/2-1-.jpg",
       "assets/images/gallery-2.jpg",
       "assets/images/gallery-3.jpg",
       "assets/images/gallery-4.jpg",
