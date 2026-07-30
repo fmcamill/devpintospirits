@@ -42,7 +42,8 @@
   </script>
   <link rel="stylesheet" href="assets/css/pinto.css">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" integrity="sha384-dy2tW8xkhLIj8lZR42MCwZhhDb2cCewZiw0uA65CMpdHiJzL+iubx7HzHcCXU2rW" crossorigin="anonymous"></script>
+  <!-- Netlify Identity widget: no SRI/crossorigin — it's a rolling first-party script and its CDN doesn't send CORS headers, so SRI would force a blocked CORS request -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
